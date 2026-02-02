@@ -129,6 +129,10 @@ body {
   line-height: 1.625;
 }
 
+.nb {
+  background-color: var(--tj-color-ph9-primary);
+}
+
 a {
   text-decoration: none;
 }
@@ -1765,7 +1769,7 @@ START: Theme Header CSS
 START: Theme Footer CSS
 ----------------------------------------*/
 .tj-footer-section {
-  background-color: var(--tj-color-theme-bg);
+  background-color: var(--tj-color-ph9-primary);
   position: relative;
   z-index: 1;
   border-radius: 16px;
@@ -3282,6 +3286,7 @@ START: Heading CSS
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  color: var(--tj-color-common-black-2)
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .sec-heading-inner {
@@ -3296,7 +3301,7 @@ START: Heading CSS
   margin-bottom: 0;
 }
 .sec-heading .sec-title span {
-  color: var(--tj-color-theme-dark-2);
+  color: var(--tj-color-common-black-2);
 }
 .sec-heading .sec-title span img {
   max-width: 140px;
@@ -3345,20 +3350,20 @@ START: Heading CSS
   display: block;
 }
 .sec-heading.style-2 .sec-title span {
-  color: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-black-2);
 }
 .sec-heading.style-2 .sub-title {
   color: var(--tj-color-text-body);
 }
 .sec-heading.style-2 .sub-title span {
-  color: var(--tj-color-theme-primary);
+  color: var(--tj-color-common-black-2);
   margin-inline-end: 5px;
 }
 .sec-heading.style-3 .sec-title {
   display: block;
 }
 .sec-heading.style-3 .sec-title span {
-  color: var(--tj-color-theme-primary);
+    color: var(--tj-color-common-black-2);
 }
 .sec-heading.style-3 .sub-title {
   color: var(--tj-color-text-body);
@@ -3384,7 +3389,7 @@ START: Hero CSS
   position: relative;
   z-index: 1;
   margin: 0 30px;
-  background-color: var(--tj-color-theme-bg);
+  background-color: var(--tj-color-ph9-primary);
   border-radius: 20px;
   padding-top: 214px;
   padding-bottom: 60px;
@@ -4198,6 +4203,7 @@ START: Choose CSS
   max-width: 250px;
   width: 100%;
   margin-bottom: 0;
+  color: var(--tj-color-common-black-2)
 }
 .tj-choose-section.h9-choose .sec-heading .desc {
   max-width: 425px;
@@ -4428,7 +4434,7 @@ START: Client CSS
 START: About CSS
 ----------------------------------------*/
 .tj-about-section {
-  background-color: var(--tj-color-theme-bg);
+  background-color: var(--tj-color-ph9-primary);
   border-radius: 16px;
   position: relative;
   z-index: 1;
@@ -4734,7 +4740,7 @@ START: About CSS
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: bottom right;
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-ph9-primary);
   z-index: -1;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4778,13 +4784,13 @@ START: About CSS
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-content-area {
     padding: 40px 30px;
-    background-color: var(--tj-color-theme-dark);
+    background-color: var(--tj-color-ph9-primary);
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .about-content-area {
     padding: 40px 20px;
-    background-color: var(--tj-color-theme-dark);
+    background-color: var(--tj-color-ph9-primary);
     border-radius: 12px;
   }
 }
@@ -4989,7 +4995,7 @@ START: About CSS
     max-width: 100%;
     padding: 70px 15px 30px;
     border-radius: 12px;
-    background-color: var(--tj-color-theme-bg);
+    background-color: var(--tj-color-ph9-primary);
   }
 }
 .tj-about-section-2 .about-content-area::before {
@@ -10780,7 +10786,7 @@ START: Breadcrumb CSS
 .tj-page-header {
   position: relative;
   margin: 0 30px;
-  background-color: var(--tj-color-theme-bg);
+  background-color: var(--tj-color-ph9-primary);
   padding-top: 272px;
   padding-bottom: 151px;
   border-radius: 16px;
@@ -13196,7 +13202,7 @@ START: About CSS
 }
 .h4-about-section .about-content-area {
   padding: 120px 20px 120px 95px;
-  background-color: var(--tj-color-theme-bg);
+  background-color: var(--tj-color-ph9-primary);
   border: 1px solid var(--tj-color-border-1);
 }
 .h4-about-section .about-content-area .about-content {
@@ -16572,7 +16578,7 @@ START: Theme Footer CSS
   top: 5px;
   width: 62px;
   height: calc(100% - 10px);
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--tj-color-ph9-primary);
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
