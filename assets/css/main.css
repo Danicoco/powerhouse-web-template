@@ -121,7 +121,7 @@ html {
 }
 
 body {
-  background-color: var(--tj-color-common-black-2);
+  background-color: var(--tj-color-common-white);
   color: var(--tj-color-text-body);
   font-family: var(--tj-ff-body);
   font-size: var(--tj-fs-body);
