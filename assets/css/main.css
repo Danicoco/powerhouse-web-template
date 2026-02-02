@@ -92,7 +92,9 @@ START: Theme Default CSS
   --tj-color-heading-primary: #f6f7f7;
   --tj-color-text-body: #bcbdb9;
   --tj-color-text-body-2: #999996;
-  --tj-color-theme-primary: #014421;
+  --tj-color-ph9-primary: #014421;
+  --tj-color-ph9-gold: #D4AF37;
+  --tj-color-theme-primary: #fff;
   --tj-color-theme-bg: #191a18;
   --tj-color-theme-dark: #050505;
   --tj-color-theme-dark-2: #494a46;
@@ -916,7 +918,7 @@ body:has(.sticky) .sticky-lg-top {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--tj-color-ph9-primary);
   font-size: 16px;
   font-weight: var(--tj-fw-sbold);
   padding: 5px 5px 5px 30px;
@@ -929,7 +931,7 @@ body:has(.sticky) .sticky-lg-top {
   white-space: nowrap;
 }
 .tj-primary-btn .btn-text {
-  color: var(--tj-color-theme-bg);
+  color: var(--tj-color-white-2);
   overflow: hidden;
 }
 .tj-primary-btn .btn-text span {
@@ -953,7 +955,7 @@ body:has(.sticky) .sticky-lg-top {
 }
 .tj-primary-btn .btn-icon::before {
   content: "";
-  background-color: var(--tj-color-theme-dark);
+  background-color: var(--tj-color-white-2);
   width: 46px;
   height: calc(100% - 10px);
   position: absolute;
@@ -1768,7 +1770,8 @@ START: Theme Footer CSS
   z-index: 1;
   border-radius: 16px;
   overflow: hidden;
-  padding-top: 138px;
+  margin-top: 20px;
+  padding-top: 5px;
 }
 .tj-footer-section .bg-img {
   opacity: 0.15;
@@ -1837,12 +1840,17 @@ START: Theme Footer CSS
 }
 
 .download-buttons {
-  max-width: 150px;
+  max-width: 450px;
   width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row; 
 }
 .download-buttons a {
-  display: block;
-  max-width: 148px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row; 
+  max-width: 178px;
   width: 100%;
   border: 6px;
   margin-bottom: 15px;
@@ -3040,7 +3048,7 @@ START: Preloader CSS
   right: 0;
   bottom: 0;
   z-index: 99999;
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--tj-color-ph9-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3307,7 +3315,7 @@ START: Heading CSS
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: var(--tj-color-theme-primary);
+  color: var(--tj-color-ph9-gold);
   font-size: 15px;
   line-height: 1;
   letter-spacing: 0.15em;
@@ -3973,7 +3981,7 @@ START: Hero CSS
 }
 .tj-banner-section-2 .banner-content .banner-title {
   max-width: 720px;
-  font-size: 65px;
+  font-size: 35px;
   line-height: 1.048;
 }
 
@@ -3989,7 +3997,7 @@ START: Hero CSS
 }
 @media (max-width: 575px) {
   .tj-banner-section-2 .banner-content .banner-title {
-    font-size: 36px;
+    font-size: 35px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -13076,7 +13084,7 @@ START: Hero CSS
   border: 1px solid var(--tj-color-border-1);
 }
 .video-btn-2 .btn-icon {
-  color: var(--tj-color-heading-primary);
+  color: var(--tj-color-ph9-gold);
   font-size: 12px;
   line-height: 1;
 }
@@ -14155,13 +14163,14 @@ START: Hero CSS
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tj-banner-section.h5-banner-section .banner-content .banner-title {
-    font-size: 76px;
+    font-size: 56px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-banner-section.h5-banner-section .banner-content .banner-title {
-    font-size: 45px;
+    font-size: 25px;
     text-align: center;
+    line-height: 25px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
@@ -14236,6 +14245,14 @@ START: Hero CSS
   justify-content: center;
   align-items: center;
 }
+.container-padding {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tj-banner-section.h5-banner-section .banner-img-area .banner-img-2 {
     max-width: 160px;
@@ -18154,7 +18171,7 @@ START: Home 8 Hero CSS
 @media (max-width: 575px) {
   .tj-h8-banner-subscribe .subscribe-form.cta-form [type=submit] .btn-icon::before,
   .tj-h8-banner-subscribe .subscribe-form.cta-form input[type=submit] .btn-icon::before {
-    background-color: var(--tj-color-theme-primary);
+    background-color: var(--tj-color-white-2);
   }
 }
 .tj-h8-banner-subscribe .subscribe-form.cta-form [type=submit] .btn-icon i,

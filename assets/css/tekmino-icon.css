@@ -132,6 +132,7 @@
 }
 .tji-arrow-right-2:before {
   content: "\e919";
+  color: var(--tj-color-ph9-gold);
 }
 .tji-arrow-up:before {
   content: "\e91a";
@@ -267,6 +268,7 @@
 }
 .tji-check:before {
   content: "\e941";
+  color: var(--tj-color-ph9-gold);
 }
 .tji-check-2:before {
   content: "\e91e";
